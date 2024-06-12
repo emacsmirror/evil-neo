@@ -1,4 +1,40 @@
-;; Set up Neo keybindings for Evil
+;;; evil-neo.el --- Minor mode for using the Neo keyboard layout with Evil
+
+;; Copyright (C) 2024 Peter Conrad
+
+;; Author: Peter Conrad <p.conrad@proton.me>
+;; Version: 1.0
+;; Package-Requires: ((evil "1.0.0"))
+;; Created: June 12 2024
+;; Keywords: neo evil vim keymap
+
+;; This program is free software: you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+;;
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+;;
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+;;; Commentary:
+
+;; Evil Neo mode allows you to use the Neo keyboard layout with evil-mode.
+;; It does so by remapping h, j, k, l movements and related keys to Neo's
+;; s, n, r, and t. Most keybindings are simply swapped with their counterparts,
+;; (hjkl <-> snrt), but some liberties were taken when it made sense (mostly
+;; regarding window management).
+;; Evil Neo mode tries to preserve Evil's distinction between motion and normal
+;; state, only mapping keys in their original modes where possible.
+;; The mappings are meant to be exhaustive, taking into account all
+;; keybindings defined in evil-motion-state-map and evil-normal-state-map.
+
+;;; Code:
+
 (define-minor-mode evil-neo-mode
   "Minor mode for using Evil with the Neo keyboard layout."
   :lighter " evil-neo"
@@ -83,3 +119,5 @@
   "H" 'evil-change-whole-line
   "J" 'evil-search-previous
   "K" 'evil-enter-replace-state)
+
+;;; evil-neo.el ends here
