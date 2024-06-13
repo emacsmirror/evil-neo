@@ -6,7 +6,8 @@
 ;; Version: 1.0
 ;; Package-Requires: ((evil "1.0.0"))
 ;; Created: June 12 2024
-;; Keywords: neo evil vim keymap
+;; Keywords: convenience emulations neo evil vim keymap
+;; URL: https://git.sr.ht/~p-conrad/evil-neo-mode
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -35,11 +36,15 @@
 
 ;;; Code:
 
+(require 'evil)
+
+;;;###autoload
 (define-minor-mode evil-neo-mode
   "Minor mode for using Evil with the Neo keyboard layout."
   :lighter " evil-neo"
   :keymap (make-sparse-keymap))
 
+;;;###autoload
 (define-globalized-minor-mode global-evil-neo-mode
   evil-neo-mode (lambda () (evil-neo-mode t))
   "Global mode to let you use Evil with the Neo keyboard layout.")
@@ -119,5 +124,7 @@
   "H" 'evil-change-whole-line
   "J" 'evil-search-previous
   "K" 'evil-enter-replace-state)
+
+(provide 'evil-neo)
 
 ;;; evil-neo.el ends here
