@@ -30,7 +30,7 @@
 ;; (hjkl <-> snrt), but some liberties were taken when it made sense (mostly
 ;; regarding window management).
 ;; Evil Neo mode tries to preserve Evil's distinction between motion and normal
-;; state, only mapping keys in their original modes where possible.
+;; states, only mapping keys in their original modes where possible.
 ;; The mappings are meant to be exhaustive, taking into account all
 ;; keybindings defined in evil-motion-state-map and evil-normal-state-map.
 
