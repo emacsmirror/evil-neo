@@ -33,33 +33,33 @@ Or with use-package:
 
 ## In motion state
 
-| Keybinding           | Replaces             | Description                                                   | Comment                                                         |
-| -------------------- | -------------------- | ------------------------------------------------------------- | --------------------------------------------------------------- |
-| s, n, r, t           | h, j, k, l           | movement                                                      | vim's classic movement keys                                     |
-| gn, gr               | gj, gk               | visual line movement                                          |                                                                 |
-| j, J                 | n, N                 | next/previous search result                                   | [j]ump to next/previous result                                  |
-| l, L                 | t, T                 | forward/backward till char                                    | move to the [l]eft of char                                      |
-| S, T                 | H, L                 | screen top/bottom                                             |                                                                 |
-| R                    | K                    | lookup keyword                                                | [R]ead the manual about keyword                                 |
-| C-w {s, n, r, t}     | C-w {h, j, k, l}     | go to the left, below, above, right window                    | vim movement keys                                               |
-| C-w C-{s, n, r, t}   | C-w C-{h, j, k, l}   |                                                               | same as above, using Ctrl for both keys                         |
-| C-w {h, H}           | C-w {s, S}           | split window horizontally                                     | this one is even more consistent than vim's original keybinding |
-| C-w C-h              | C-w C-s              |                                                               | same as above, using Ctrl for both keys                         |
-| C-w a                | C-w n                | open new buffer in horizontal split                           | [a]dd a new window (instead of using C-w C-j)                   |
-| C-w C-a              | C-w C-n              |                                                               | same as above, using Ctrl for both keys                         |
-| C-w {d, D}           | C-w {r, R}           | rotate window downwards/upwards                               | rotate [d]ownwards or reverse                                   |
-| C-w C-{d, D}         | C-w C-{r, R}         |                                                               | same as above, using Ctrl for both keys                         |
-| C-w l                | C-w t                | go to the window top left                                     | top [l]eft (bottom right is left as is: C-w C-b)                |
-| C-w C-l              | C-w C-t              |                                                               | same as above, using Ctrl for both keys                         |
-| C-w {S, N, R, T}     | C-w {H, J, K, L}     | move window to the far left, very bottom, very top, far right | vim movement keys                                               |
-| C-w C-S-{s, n, r, t} | C-w C-S-{h, j, k, l} |                                                               | same as above, using Ctrl for both keys                         |
+| Keybinding                                             | Replaces                                               | Description                         | Comment                                       |
+| ------------------------------------------------------ | ------------------------------------------------------ | ----------------------------------- | --------------------------------------------- |
+| <kbd>s</kbd>, <kbd>n</kbd>, <kbd>r</kbd>, <kbd>t</kbd> | <kbd>h</kbd>, <kbd>j</kbd>, <kbd>k</kbd>, <kbd>l</kbd> | movement                            | vim's classic movement keys                   |
+| <kbd>gn</kbd>, <kbd>gr</kbd>                           | <kbd>gj</kbd>, <kbd>gk</kbd>                           | visual line movement                |                                               |
+| <kbd>j</kbd>, <kbd>J</kbd>                             | <kbd>n</kbd>, <kbd>N</kbd>                             | next/previous search result         | [j]ump to next/previous result                |
+| <kbd>l</kbd>, <kbd>L</kbd>                             | <kbd>t</kbd>, <kbd>T</kbd>                             | forward/backward till char          | move to the [l]eft of char                    |
+| <kbd>S</kbd>, <kbd>T</kbd>                             | <kbd>H</kbd>, <kbd>L</kbd>                             | screen top/bottom                   |                                               |
+| <kbd>R</kbd>                                           | <kbd>K</kbd>                                           | lookup keyword                      | [R]ead the manual about keyword               |
+| <kbd>C-w</kbd> {<kbd>s</kbd>, <kbd>n</kbd>, <kbd>r</kbd>, <kbd>t</kbd>} | <kbd>C-w</kbd> {<kbd>h</kbd>, <kbd>j</kbd>, <kbd>k</kbd>, <kbd>l</kbd>} | go to the left, below, above, right window | vim movement keys |
+| <kbd>C-w C-</kbd>{<kbd>s</kbd>, <kbd>n</kbd>, <kbd>r</kbd>, <kbd>t</kbd>} | <kbd>C-w</kbd> <kbd>C-</kbd>{<kbd>h</kbd>, <kbd>j</kbd>, <kbd>k</kbd>, <kbd>l</kbd>} | | same as above, using Ctrl for both keys |
+| <kbd>C-w</kbd> {<kbd>h</kbd>, <kbd>H</kbd>}            | <kbd>C-w</kbd> {<kbd>s</kbd>, <kbd>S</kbd>}            | split window horizontally           | this one is even more consistent than vim's original keybinding |
+| <kbd>C-w C-h</kbd>                                     | <kbd>C-w C-s</kbd>                                     |                                     | same as above, using Ctrl for both keys       |
+| <kbd>C-w a</kbd>                                       | <kbd>C-w n</kbd>                                       | open new buffer in horizontal split | [a]dd a new window (instead of using C-w C-j) |
+| <kbd>C-w C-a</kbd>                                     | <kbd>C-w C-n</kbd>                                     |                                     | same as above, using Ctrl for both keys       |
+| <kbd>C-w</kbd> {<kbd>d</kbd>, <kbd>D</kbd>}            | <kbd>C-w</kbd> {<kbd>r</kbd>, <kbd>R</kbd>}            | rotate window downwards/upwards     | rotate [d]ownwards or reverse                 |
+| <kbd>C-w C-</kbd>{<kbd>d</kbd>, <kbd>D</kbd>}          | <kbd>C-w C-</kbd>{<kbd>r</kbd>, <kbd>R</kbd>}          |                                     | same as above, using Ctrl for both keys       |
+| <kbd>C-w l</kbd>                                       | <kbd>C-w t</kbd>                                       | go to the window top left           | top [l]eft (bottom right is left as is: C-w C-b) |
+| <kbd>C-w C-l</kbd>                                     | <kbd>C-w C-t</kbd>                                     |                                     | same as above, using Ctrl for both keys       |
+| <kbd>C-w</kbd> {<kbd>S</kbd>, <kbd>N</kbd>, <kbd>R</kbd>, <kbd>T</kbd>} | <kbd>C-w</kbd> {<kbd>H</kbd>, <kbd>J</kbd>, <kbd>K</kbd>, <kbd>L</kbd>} | move window to the far left, very bottom, very top, far right | vim movement keys |
+| <kbd>C-w C-S-</kbd>{<kbd>s</kbd>, <kbd>n</kbd>, <kbd>r</kbd>, <kbd>t</kbd>} | <kbd>C-w C-S-</kbd>{<kbd>h</kbd>, <kbd>j</kbd>, <kbd>k</kbd>, <kbd>l</kbd>} | | same as above, using Ctrl for both keys |
 
 ## In normal state
 
-| Keybinding | Replaces | Description                      | Comment          |
-| ---------- | -------- | -------------------------------- | ---------------- |
-| h          | s        | delete character and insert text |                  |
-| H          | S        | delete line and insert text      |                  |
-| k          | r        | replace character                | [k]ill character |
-| K          | R        | enter replace mode               |                  |
-| J          | N        | join next line to current one    | [J]oin next line |
+| Keybinding   | Replaces     | Description                      | Comment          |
+| ------------ | ------------ | -------------------------------- | ---------------- |
+| <kbd>h</kbd> | <kbd>s</kbd> | delete character and insert text |                  |
+| <kbd>H</kbd> | <kbd>S</kbd> | delete line and insert text      |                  |
+| <kbd>k</kbd> | <kbd>r</kbd> | replace character                | [k]ill character |
+| <kbd>K</kbd> | <kbd>R</kbd> | enter replace mode               |                  |
+| <kbd>J</kbd> | <kbd>N</kbd> | join next line to current one    | [J]oin next line |
