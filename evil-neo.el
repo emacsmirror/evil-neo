@@ -133,6 +133,13 @@
   "J" #'evil-search-previous
   "K" #'evil-enter-replace-state)
 
+(evil-define-key 'visual evil-neo-mode-map
+  "h" #'evil-substitute
+  "k" #'evil-replace
+
+  "H" #'evil-change-whole-line
+  "R" #'evil-lookup)
+
 (provide 'evil-neo)
 
 ;;; evil-neo.el ends here
