@@ -45,11 +45,11 @@ Or with use-package:
 | <kbd>C-w C-</kbd>{<kbd>s</kbd>, <kbd>n</kbd>, <kbd>r</kbd>, <kbd>t</kbd>} | <kbd>C-w</kbd> <kbd>C-</kbd>{<kbd>h</kbd>, <kbd>j</kbd>, <kbd>k</kbd>, <kbd>l</kbd>} | | same as above, using Ctrl for both keys |
 | <kbd>C-w</kbd> {<kbd>h</kbd>, <kbd>H</kbd>}            | <kbd>C-w</kbd> {<kbd>s</kbd>, <kbd>S</kbd>}            | split window horizontally           | this one is even more consistent than vim's original keybinding |
 | <kbd>C-w C-h</kbd>                                     | <kbd>C-w C-s</kbd>                                     |                                     | same as above, using Ctrl for both keys       |
-| <kbd>C-w a</kbd>                                       | <kbd>C-w n</kbd>                                       | open new buffer in horizontal split | [a]dd a new window (instead of using C-w C-j) |
+| <kbd>C-w a</kbd>                                       | <kbd>C-w n</kbd>                                       | open new buffer in horizontal split | [a]dd a new window (instead of using <kbd>C-w C-j</kbd>) |
 | <kbd>C-w C-a</kbd>                                     | <kbd>C-w C-n</kbd>                                     |                                     | same as above, using Ctrl for both keys       |
 | <kbd>C-w</kbd> {<kbd>d</kbd>, <kbd>D</kbd>}            | <kbd>C-w</kbd> {<kbd>r</kbd>, <kbd>R</kbd>}            | rotate window downwards/upwards     | rotate [d]ownwards or reverse                 |
 | <kbd>C-w C-</kbd>{<kbd>d</kbd>, <kbd>D</kbd>}          | <kbd>C-w C-</kbd>{<kbd>r</kbd>, <kbd>R</kbd>}          |                                     | same as above, using Ctrl for both keys       |
-| <kbd>C-w l</kbd>                                       | <kbd>C-w t</kbd>                                       | go to the window top left           | top [l]eft (bottom right is left as is: C-w C-b) |
+| <kbd>C-w l</kbd>                                       | <kbd>C-w t</kbd>                                       | go to the window top left           | top [l]eft (bottom right is left as is: <kbd>C-w b</kbd>) |
 | <kbd>C-w C-l</kbd>                                     | <kbd>C-w C-t</kbd>                                     |                                     | same as above, using Ctrl for both keys       |
 | <kbd>C-w</kbd> {<kbd>S</kbd>, <kbd>N</kbd>, <kbd>R</kbd>, <kbd>T</kbd>} | <kbd>C-w</kbd> {<kbd>H</kbd>, <kbd>J</kbd>, <kbd>K</kbd>, <kbd>L</kbd>} | move window to the far left, very bottom, very top, far right | vim movement keys |
 | <kbd>C-w C-S-</kbd>{<kbd>s</kbd>, <kbd>n</kbd>, <kbd>r</kbd>, <kbd>t</kbd>} | <kbd>C-w C-S-</kbd>{<kbd>h</kbd>, <kbd>j</kbd>, <kbd>k</kbd>, <kbd>l</kbd>} | | same as above, using Ctrl for both keys |
