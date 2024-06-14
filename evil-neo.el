@@ -7,7 +7,7 @@
 ;; Package-Requires: ((evil "1.0.0"))
 ;; Created: June 12 2024
 ;; Keywords: convenience emulations neo evil vim keymap
-;; URL: https://git.sr.ht/~p-conrad/evil-neo-mode
+;; URL: https://git.sr.ht/~p-conrad/evil-neo
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
