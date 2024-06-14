@@ -2,8 +2,8 @@
 
 This packages allows you to use the [Neo keyboard layout](https://www.neo-layout.org) with
 [evil-mode](https://github.com/emacs-evil/evil) by remapping the hjkl movements and related keys to
-Neo's snrt keys. Most keybindings are simply swapped (hjkl <-> snrt), but some liberties were taken
-when it made sense. A complete overview of the keybindings is shown below.
+Neo's snrt keys. Most keybindings are simply swapped (hjkl <-> snrt), with a few exceptions where it
+made sense. A complete overview of the keybindings is shown below along with some useful hints.
 
 Evil Neo mode tries to preserve Evil's distinction between motion, normal, and visual states, only
 mapping keys in their original modes when possible. The mappings are meant to be exhaustive, taking
