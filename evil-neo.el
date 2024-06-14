@@ -72,15 +72,23 @@
   "L" #'evil-find-char-to-backward
 
   ;; window movements (hjkl -> snrt)
+  (kbd "C-w s") #'evil-window-left
+  (kbd "C-w n") #'evil-window-down
+  (kbd "C-w r") #'evil-window-up
+  (kbd "C-w t") #'evil-window-right
+  (kbd "C-w C-s") #'evil-window-left
   (kbd "C-w C-n") #'evil-window-down
   (kbd "C-w C-r") #'evil-window-up
-  (kbd "C-w C-s") #'evil-window-left
   (kbd "C-w C-t") #'evil-window-right
 
   ;; window management (snrt -> hadl)
   ;; a and d are used in place of j and k to make them a bit more intuitive
-  (kbd "C-w C-h") #'evil-window-split			; 'horizontal' split
-  (kbd "C-w C-a") #'evil-window-new			; 'add' new window
+  (kbd "C-w h") #'evil-window-split	; 'horizontal' split
+  (kbd "C-w a") #'evil-window-new	; 'add' new window
+  (kbd "C-w d") #'evil-window-rotate-downwards
+  (kbd "C-w l") #'evil-window-top-left
+  (kbd "C-w C-h") #'evil-window-split
+  (kbd "C-w C-a") #'evil-window-new
   (kbd "C-w C-d") #'evil-window-rotate-downwards
   (kbd "C-w C-l") #'evil-window-top-left
 
@@ -92,7 +100,7 @@
 
   ;; replacements (SR -> HD)
   (kbd "C-w H") #'evil-window-split
-  (kbd "C-w D") #'evil-window-rotate-upwards		; reverse of 'downwards'
+  (kbd "C-w D") #'evil-window-rotate-upwards	; reverse of 'downwards'
 
   ;; the same using the shift key (hjkl -> snrt)
   (kbd "C-w C-S-s") #'evil-window-move-far-left
