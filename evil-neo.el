@@ -38,16 +38,23 @@
 
 (require 'evil)
 
+(defgroup evil-neo-mode nil
+  "Keybindings for using Evil with the Neo keyboard layout."
+  :prefix "evil-neo-mode-"
+  :group 'evil)
+
 ;;;###autoload
 (define-minor-mode evil-neo-mode
   "Minor mode for using Evil with the Neo keyboard layout."
   :lighter " evil-neo"
-  :keymap (make-sparse-keymap))
+  :keymap (make-sparse-keymap)
+  :group 'evil-neo-mode)
 
 ;;;###autoload
 (define-globalized-minor-mode global-evil-neo-mode
   evil-neo-mode (lambda () (evil-neo-mode t))
-  "Global mode to let you use Evil with the Neo keyboard layout.")
+  "Global mode to let you use Evil with the Neo keyboard layout."
+  :group 'evil-neo-mode)
 
 (evil-define-key 'motion evil-neo-mode-map
   ;; basic motions (hjkl -> snrt)
