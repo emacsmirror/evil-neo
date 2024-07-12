@@ -64,3 +64,12 @@ Or with use-package:
 | <kbd>k</kbd> | <kbd>r</kbd> | replace character                | [k]ill character |
 | <kbd>K</kbd> | <kbd>R</kbd> | enter replace mode               |                  |
 | <kbd>J</kbd> | <kbd>N</kbd> | join next line to current one    | [J]oin next line |
+
+## In visual state
+
+| Keybinding   | Replaces     | Description                      | Comment           |
+| ------------ | ------------ | -------------------------------- | ----------------- |
+| <kbd>h</kbd> | <kbd>s</kbd> | delete selection and insert text |                   |
+| <kbd>H</kbd> | <kbd>S</kbd> | delete line and insert text      |                   |
+| <kbd>k</kbd> | <kbd>r</kbd> | replace selection with character | [k]ill selection  |
+| <kbd>R</kbd> | <kbd>K</kbd> | look up selection                | [R]ead the manual |
