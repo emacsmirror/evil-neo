@@ -7,10 +7,10 @@ made sense. A complete overview of the keybindings is shown below along with som
 
 Evil Neo mode tries to preserve Evil's distinction between motion, normal, and visual states, only
 mapping keys in their original modes when possible. The mappings are meant to be exhaustive, taking
-into account all keybindings defined in `evil-motion-state-map` and `evil-normal-state-map` at the
-time of creating this package (using Evil version 1.15.0). Instead of modifying Evil's keys directly,
-a minor mode with its own keymap is used, allowing you to easily turn it on/off in a single buffer
-or globally.
+into account all keybindings defined in `evil-motion-state-map`, `evil-normal-state-map`, and
+`evil-visual-state-map`, at the time of creating this package (using Evil version 1.15.0). Instead
+of modifying Evil's keys directly, a minor mode with its own keymap is used, allowing you to easily
+turn it on/off in a single buffer or globally.
 
 # Usage
 
