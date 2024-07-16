@@ -63,7 +63,7 @@ Or with use-package:
 | <kbd>H</kbd> | <kbd>S</kbd> | delete line and insert text      |                  |
 | <kbd>k</kbd> | <kbd>r</kbd> | replace character                | [k]ill character |
 | <kbd>K</kbd> | <kbd>R</kbd> | enter replace mode               |                  |
-| <kbd>J</kbd> | <kbd>N</kbd> | join next line to current one    | [J]oin next line |
+| <kbd>N</kbd> | <kbd>J</kbd> | join next line to current one    | join [N]ext line |
 
 ## In visual state
 
