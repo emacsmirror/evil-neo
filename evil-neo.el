@@ -38,9 +38,9 @@
 
 (require 'evil)
 
-(defgroup evil-neo-mode nil
+(defgroup evil-neo nil
   "Keybindings for using Evil with the Neo keyboard layout."
-  :prefix "evil-neo-mode-"
+  :prefix "evil-neo-"
   :group 'evil)
 
 ;;;###autoload
