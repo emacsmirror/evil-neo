@@ -25,14 +25,17 @@
 ;;; Commentary:
 
 ;; Evil Neo mode allows you to use the Neo keyboard layout with evil-mode.
-;; It does so by remapping h, j, k, l movements and related keys to Neo's
-;; s, n, r, and t. Most keybindings are simply swapped with their counterparts,
-;; (hjkl <-> snrt), but some liberties were taken when it made sense (mostly
-;; regarding window management).
-;; Evil Neo mode tries to preserve Evil's distinction between motion and normal
-;; states, only mapping keys in their original modes where possible.
-;; The mappings are meant to be exhaustive, taking into account all
-;; keybindings defined in evil-motion-state-map and evil-normal-state-map.
+;; Evil-Neo allows you to use evil's keybindings with the German Neo keyboard
+;; layout by remapping the hjkl keys to Neo's snrt keys. Most keybindings are
+;; simply swapped with their counterports, but a few liberties where taken when
+;; it made sense. The keys are mapped in their own minor mode, enabling the user
+;; to turn it on and off as needed.
+;; Evil-Neo aims to preserve Evil's distinction between motion, normal, and
+;; visual states, mapping keys only in the modes they were originally defined
+;; in, where possible. The keybindings are exhaustive, with all keybindings
+;; defined in evil-motion-state-map, evil-normal-state-map, and
+;; evil-visual-state-map taken into account at the time of authoring this
+;; package.
 
 ;;; Code:
 
@@ -99,7 +102,7 @@
   (kbd "C-w C-d") #'evil-window-rotate-downwards
   (kbd "C-w C-l") #'evil-window-top-left
 
-  ; capital letters window management (HJKL -> SNRT)
+  ;; capital letters window management (HJKL -> SNRT)
   (kbd "C-w S") #'evil-window-move-far-left
   (kbd "C-w N") #'evil-window-move-very-bottom
   (kbd "C-w R") #'evil-window-move-very-top

@@ -1,16 +1,19 @@
-# Evil Neo Mode
+# Evil-Neo Mode
 
-This packages allows you to use the [Neo keyboard layout](https://www.neo-layout.org) with
-[evil-mode](https://github.com/emacs-evil/evil) by remapping the hjkl movements and related keys to
-Neo's snrt keys. Most keybindings are simply swapped (hjkl <-> snrt), with a few exceptions where it
-made sense. A complete overview of the keybindings is shown below along with some useful hints.
 
-Evil Neo mode tries to preserve Evil's distinction between motion, normal, and visual states, only
-mapping keys in their original modes when possible. The mappings are meant to be exhaustive, taking
-into account all keybindings defined in `evil-motion-state-map`, `evil-normal-state-map`, and
-`evil-visual-state-map`, at the time of creating this package (using Evil version 1.15.0). Instead
-of modifying Evil's keys directly, a minor mode with its own keymap is used, allowing you to easily
-turn it on/off in a single buffer or globally.
+Evil-Neo allows you to use Evil's keybindings with the German
+[Neo keyboard layout](https://www.neo-layout.org) by remapping the hjkl keys to Neo's snrt keys.
+Most keybindings are simply swapped with their counterparts, but a few liberties where taken when
+it made sense. The keys are mapped in their own minor mode, enabling the user to turn it on and off
+as needed.
+
+Evil-Neo aims to preserve Evil's distinction between motion, normal, and visual states, mapping keys
+only in the modes they were originally defined in, where possible. The keybindings are exhaustive,
+with all keybindings defined in `evil-motion-state-map`, `evil-normal-state-map`, and
+`evil-visual-state-map` taken into account at the time of authoring this package (using Evil 1.15.0).
+
+A complete overview of the mapped keys is provided in the tables below along with some useful hints.
+
 
 # Usage
 
